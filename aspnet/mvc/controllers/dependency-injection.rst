@@ -89,7 +89,7 @@ Sometimes you don't need a service for more than one action within your controll
   
 Accessing Settings from a Controller
 ------------------------------------
-A common pattern is accessing application or configuration settings from within a controller. This access should use the Options pattern described in `configuration <https://docs.asp.net/en/latest/fundamentals/configuration.html>`_. You generally should not request settings directly from your controller using dependency injection. A better approach is to request an ``IOptions<T>`` instance, where T is the configuration class you need.
+Accessing application or configuration settings from within a controller is a common pattern. This access should use the Options pattern described in `configuration <https://docs.asp.net/en/latest/fundamentals/configuration.html>`_. You generally should not request settings directly from your controller using dependency injection. A better approach is to request an ``IOptions<T>`` instance, where T is the configuration class you need.
 
 To work with the options pattern, you need to create a class that represents the options, such as this one:
 
